@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'recipe-shopping-app';
+  tab:string = 'recipes';
+
+  updateContent(content:any){
+    this.tab  = content;
+  }
 }
